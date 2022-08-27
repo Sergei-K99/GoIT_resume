@@ -1,0 +1,157 @@
+@charset "UTF-8";
+body {
+  color: #595959;
+  font-style: "Montserrat";
+  font-style: normal;
+}
+
+h1 {
+  font-size: 45px;
+  line-height: 55px;
+}
+
+h2 {
+  font-size: 22px;
+  line-height: 27px;
+}
+
+h3 {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+h4 {
+  font-size: 14px;
+  line-height: 17px;
+}
+
+ol,
+ul {
+  margin-top: 8px;
+}
+
+ul li::before {
+  content: "•";
+}
+
+ol li:before {
+  font-weight: 700;
+  font-size: 14px;
+  font-family: "Montserrat";
+  line-height: 24px;
+  color: #000000;
+  content: counter(step-counter);
+}
+
+li {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.wrapper {
+  background: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+}
+
+main {
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  background: white;
+}
+
+.skills {
+  max-width: 370px;
+  width: 100%;
+  background: #1E2939;
+}
+.skills .skills__photo {
+  width: 100%;
+  margin: 40px 0;
+}
+.skills .skills__photo img {
+  width: 100%;
+}
+.skills .skills__info {
+  margin: 0 40px;
+}
+.skills .skills__info h2 {
+  color: white;
+  margin-top: 40px;
+}
+.skills .skills__info .skills__contacts span {
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+}
+.skills .skills__info .skills__contacts a {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #FFFFFF;
+  opacity: 0.5;
+}
+.skills .skills__info li {
+  color: #FFFFFF;
+}
+.skills .skills__info li::before {
+  color: #FB6D3A;
+}
+
+.bio {
+  padding-top: 100px;
+  padding-left: 80px;
+  padding-right: 20px;
+  max-width: 500px;
+}
+.bio h1,
+.bio h2,
+.bio h3,
+.bio h4 {
+  color: #000000;
+}
+.bio ul,
+.bio ol {
+  color: #595959;
+}
+.bio .bio__user p {
+  max-width: 400px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #595959;
+}
+.bio .bio__projects {
+  margin-top: 40px;
+}
+.bio .bio__work {
+  margin-top: 50px;
+}
+.bio .bio__work section {
+  margin-bottom: 20px;
+}
+.bio .bio__work :last-child {
+  margin: 0px;
+}
+.bio .company-name {
+  color: #FB6D3A;
+}
+.bio .bio__date {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #A8A8A8;
+  margin: 11px 0 8px 0;
+}
+.bio .bio__education {
+  margin: 45px 0;
+}
+.bio .bio__education h3 {
+  margin: 12px 0 11px 0;
+}
